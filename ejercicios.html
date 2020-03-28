@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Taller 1</h1>
+        <nav>
+            <ul>
+                <li><a href="#sec1">Calculadora notas</a></li>
+                <li><a href="#sec2">Adivine el número</a></li>
+                <li><a href="#sec3">Porcentaje numeros pares e impares</a></li>
+                <li><a href="#sec4">Imprimir números</a></li>
+                <li><a href="#sec5">Palíndromo</a></li>
+                <li><a href="#sec6">Ingresar nombres</a></li>
+                <li><a href="#sec7">Invertir palabras</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="sec1">
+       <h1>Calculadora de notas</h1>
+       <p>Pepe desea saber cuál será su calificación final en la materia de Lógica de Programación y Algoritmos. Dicha calificación se compone de los siguientes porcentajes:</p>
+       <ul>
+           <li>- 55% promedio de tres parciales</li>
+           <li> - 30% Examen Final</li>
+           <li>- 15% Trabajo final</li>
+       </ul>
+            <div>
+           <label for="">Ingrese la nota del primer parcial</label>
+           <input type="number" required max="5" name="p1" id="p1" step="0.1">
+        </div>
+        <div>
+           <label for="">Ingrese la nota del segundo parcial</label>
+           <input type="number" required max="5" name="p2" id="p2" step="0.1">
+        </div>
+           <div>
+           <label for="">Ingrese la nota del tercer parcial</label>
+           <input type="number" required max="5" name="p3" id="p3" step="0.1">
+           <p id="prom"></p>
+        </div>
+           <div>
+           <label for="">Ingrese la nota del examen final</label>
+           <input type="number" required max="5" name="final" id="final" step="0.1">
+        </div>
+           <div>
+           <label for="">Ingrese la nota del trabajo final</label>
+           <input type="number" required max="5" name="workF" id="workF" step="0.1">
+            </div>
+           <button onclick="calificacion()">Calcular</button>
+
+       <p id="notaFinal"></p>
+    </section>
+    <section id="sec2">
+        <h1>Adivine el número</h1>
+        <button onclick="numero_random()">Jugar</button>  
+    </section>
+    <section id="sec3">
+        <h1>Porcentaje de numeros pares e impares</h1>
+        <p id="parcial"></p>
+        <p id="resPar"></p>
+        <p id="resImpar"></p>
+        <button onclick="parImpar()">Calcular</button>  
+    </section>
+    <section id="sec4">
+        <h1>Imprimir números</h1> 
+        <p>Acontinuación encontrara dos opcioes de impresión escoja aquella que necesite ingresando los numeros 1 o 2, los numeros se imprimiran por consola</p>
+        <ol>
+            <li>Imprimir los numeros del 1 al 100</li>
+            <li>Imprimir los numeros del 101 al 200</li>
+        </ol>
+        <button onclick="imprimirNumeros()">Imprimir</button> 
+    </section>
+    <section id="sec5">
+        <h1>Palíndromo</h1>
+        <label for="">Ingrese su texto</label>
+           <input type="text" required id="word"> 
+        <button onclick="esPalindromo()">Comprobar</button> 
+        <p id="test1"></p>
+    </section>
+    <section id="sec6">
+        <h1>Ingresar nombres</h1> 
+        <button onclick="nombres()">Iniciar</button> 
+    </section>
+    <section id="sec7">
+        <h1>Invertir palabras</h1>
+        <label for="">Ingrese su texto</label>
+           <input type="text" required id="word2">  
+        <button onclick="upsideDown()">Aceptar</button>
+        <p id="test2"></p> 
+    </section>
+    </div>
+    <script src="Javascript.js"></script>
+</body>
+</html>
